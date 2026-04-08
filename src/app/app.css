@@ -1,20 +1,52 @@
 .navbar {
   position: fixed;
-  top: 0;
-  width: 100%;
-  background: #111;
-  padding: 15px 20px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: fit-content;
+  padding: 10px 25px;
+
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  align-items: center;
+
+  /* MISMA ONDA QUE TU UI */
+  background: rgba(223, 244, 251, 0.7); /* mismo tono que welcome-right */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border-radius: 999px; /* bien pill */
+  border: 1px solid rgba(132, 207, 232, 0.5);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  font-family: "Nunito", sans-serif;
+
   z-index: 1000;
 }
 
 .navbar a {
-  color: white;
+  color: #2d2d2d;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.navbar a:visited {
+  color: #2d2d2d;
 }
 
 .navbar a:hover {
-  color: #00d4ff;
+  color: #00bcd4;
+}
+
+.navbar a {
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.navbar a:hover {
+  background: rgba(191, 232, 247, 0.6);
 }
