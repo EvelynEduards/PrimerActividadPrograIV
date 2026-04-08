@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
+
+* {
+  box-sizing: border-box;
+}
+
+.welcome-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #c6ecf9, #e8f8fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  padding: 40px;
+}
+
+.welcome-card {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  background: #f7f7f7;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* IZQUIERDA */
+
+.welcome-left {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome-left h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #2d2d2d;
+}
+
+.welcome-left p {
+  color: #777;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* BOTONES */
+
+.welcome-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 250px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 999px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-outline {
+  background: white;
+  border: 2px solid #bbb;
+  color: #333;
+}
+
+.btn-outline:hover {
+  background: #eee;
+}
+
+.btn-filled {
+  background: #bfe8f7;
+  border: 2px solid #84cfe8;
+  color: #333;
+}
+
+.btn-filled:hover {
+  background: #aee0f2;
+}
+
+/* DERECHA */
+
+.welcome-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dff4fb;
+}
+
+.welcome-right img {
+  width: 80%;
+  max-width: 300px;
+}
+
+/* RESPONSIVE (para que no se rompa en pantallas chicas) */
+
+@media (max-width: 768px) {
+  .welcome-card {
+    flex-direction: column;
+  }
+
+  .welcome-left {
+    text-align: center;
+  }
+
+  .welcome-buttons {
+    margin: 0 auto;
+  }
+}
